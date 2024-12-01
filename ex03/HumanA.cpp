@@ -1,29 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/27 20:08:52 by bebuber           #+#    #+#             */
-/*   Updated: 2024/11/28 15:20:42 by bebuber          ###   ########.fr       */
+/*   Created: 2024/12/01 14:59:04 by bebuber           #+#    #+#             */
+/*   Updated: 2024/12/01 15:20:47 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "HumanA.hpp"
+#include <iostream>
 
-int main() {
+HumanA::HumanA(std::string name, Weapon& weapon) : name(name), weapon(weapon) {};
 
-	int N = 15;
-	Zombie* horde = zombieHorde(N, "Horde_Zombie");
-
-	if (horde)
-	{
-		for (int i = 0; i < N; ++i) {
-			horde[i].announce();
-		}
-		delete[] horde;
-	}
-	
-	return 0;
+void HumanA::attack() {
+	std::cout << name << " attacks with their " << weapon.getType() << std::endl;
 }

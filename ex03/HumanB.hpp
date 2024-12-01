@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/27 20:08:52 by bebuber           #+#    #+#             */
-/*   Updated: 2024/11/28 15:20:42 by bebuber          ###   ########.fr       */
+/*   Created: 2024/12/01 14:52:43 by bebuber           #+#    #+#             */
+/*   Updated: 2024/12/01 15:23:29 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HUMANB_HPP
+#define HUMANB_HPP
 
-int main() {
+#include "Weapon.hpp"
 
-	int N = 15;
-	Zombie* horde = zombieHorde(N, "Horde_Zombie");
+class HumanB {
+	private:
+		std::string	name;
+		Weapon*	weapon;
+	public:
+		HumanB(std::string name);
+		void setWeapon(Weapon& weapon);
+		void attack();
+};
 
-	if (horde)
-	{
-		for (int i = 0; i < N; ++i) {
-			horde[i].announce();
-		}
-		delete[] horde;
-	}
-	
-	return 0;
-}
+
+#endif
