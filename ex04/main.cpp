@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 16:22:37 by bebuber           #+#    #+#             */
-/*   Updated: 2024/12/01 18:42:16 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/12/02 21:33:44 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int main(int argc, char* argv[])
 		replacingStrings(line, searchString1, searchString2);
 		outputFile << line << std::endl;
 	}
+	
 	inputFile.close();
 	outputFile.close();
 	

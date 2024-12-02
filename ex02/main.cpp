@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 15:23:33 by bebuber           #+#    #+#             */
-/*   Updated: 2024/11/28 15:42:57 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/12/02 21:13:29 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main() {
 
 	std::string		zombi = "HI THIS IS BRAIN";
 	std::string*	stringPTR = &zombi;
-	std::string&		stringREF = zombi;
+	std::string&	stringREF = zombi;
 	
 	std::cout << "-----Addresses-----\n" << std::endl;
 	
