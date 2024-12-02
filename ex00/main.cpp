@@ -6,7 +6,7 @@
 /*   By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 19:07:42 by bebuber           #+#    #+#             */
-/*   Updated: 2024/11/27 19:36:42 by bebuber          ###   ########.fr       */
+/*   Updated: 2024/12/02 21:09:30 by bebuber          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,6 @@ int	main() {
 	Zombie* myZombie = newZombie("Oscar");
 	myZombie->announce();
 	delete myZombie;
+
+	return 0;
 }
